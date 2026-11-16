@@ -1,0 +1,27 @@
+{
+  "agent_name": "Divyasree_WOW_Retell_Agent",
+  "voice_id": "11labs-Adrian",
+  "voice_temperature": 1.0,
+  "voice_speed": 1.05,
+  "volume": 1.0,
+  "responsiveness": 0.9,
+  "interruption_sensitivity": 0.8,
+  "enable_backchannel": true,
+  "backchannel_frequency": 0.6,
+  "backchannel_words": ["Understood", "Right", "Got it", "Makes sense"],
+  "reminder_trigger_ms": 10000,
+  "reminder_max_count": 2,
+  "ambient_sound": "coffee-shop",
+  "ambient_sound_volume": 0.05,
+  "language": "en-US",
+  "llm_websocket_url": "wss://api.retellai.com/llm-websocket",
+  "pronunciation_dictionary": [
+    {"word": "Divyasree", "alphabet": "ipa", "phoneme": "dɪv jɑː ʃriː"},
+    {"word": "Nandi", "alphabet": "ipa", "phoneme": "nʌn d̪iː"},
+    {"word": "Lakh", "alphabet": "ipa", "phoneme": "lɑːk"},
+    {"word": "Crore", "alphabet": "ipa", "phoneme": "krɔːr"},
+    {"word": "Devanahalli", "alphabet": "ipa", "phoneme": "deɪ vʌ nʌ hʌ liː"}
+  ],
+  "begin_message": "Hello, good afternoon! This is Aarav from Divyasree Developers. I am reaching out regarding Whispers of the Wind near Nandi Hills. Do you have two quick minutes to speak?",
+  "general_prompt": "You are Aarav, an elite Private Client Consultant representing Divyasree Developers for Whispers of the Wind at Nandi Hills, North Bengaluru. Qualify leads across Intent, Geography, Budget (>= ₹92.4L), and Timeline (Dec 2029). Ask permission first. Never repeat answered checkpoints. Hand over to Property Expert."
+}

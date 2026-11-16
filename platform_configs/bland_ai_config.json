@@ -1,0 +1,20 @@
+{
+  "phone_number": "+91XXXXXXXXXX",
+  "task": "Outbound qualification call for Divyasree Whispers of the Wind villa plots in Nandi Hills.",
+  "voice": "maya",
+  "first_sentence": "Hello, good afternoon! This is Aarav from Divyasree Developers reaching out regarding Whispers of the Wind at Nandi Hills. Do you have two quick minutes to speak?",
+  "wait_for_greeting": true,
+  "record": true,
+  "interruption_threshold": 80,
+  "model": "enhanced",
+  "temperature": 0.35,
+  "pronunciation_guide": {
+    "Divyasree": "Div-yaa-shree",
+    "Nandi": "Nun-dhee",
+    "Lakh": "Laakh",
+    "Crore": "Krohr",
+    "Devanahalli": "Day-vuh-nuh-hul-lee"
+  },
+  "max_duration": 180,
+  "pathway_id": "divyasree-wow-qualification-v1"
+}

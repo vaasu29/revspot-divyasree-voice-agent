@@ -1,0 +1,339 @@
+{
+  "flows": [
+    {
+      "id": "flow_1",
+      "title": "Flow 1: High-Net-Worth Investor (Happy Path)",
+      "persona": "Senior VP at IT Enterprise | High-Yield Land Investor",
+      "lead_score": "HOT LEAD (95/100)",
+      "outcome": "VIP Site Visit Scheduled (Sunday 11:00 AM)",
+      "language": "English (Indian Business English)",
+      "checkpoints": {
+        "intent": "Qualified - High-Yield Investment & Capital Appreciation",
+        "geography": "Qualified - Bullish on North BLR / Airport Growth Corridor",
+        "budget": "Qualified - ₹1.5 Cr to ₹2.0 Cr investment capacity",
+        "timeline": "Qualified - Aligned with Dec 2029 handover for phased growth"
+      },
+      "dialogue": [
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Hello, good afternoon! This is Aarav from Divyasree Developers. I am reaching out regarding our new private valley development, Whispers of the Wind, nestled right at the foothills of Nandi Hills. I hope I am not catching you at an inconvenient time—do you have two quick minutes to speak?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Hello Aarav. Yes, I have a couple of minutes. What is this project about?"
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Thank you so much! To ensure I share what is most relevant to you, are you currently exploring this more as a private weekend retreat for family, or are you looking at it primarily from a high-yield land investment perspective?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Primarily land investment. I already have an apartment in town, but I have been tracking the airport corridor and Devanahalli growth closely."
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Understood, and that is a very strategic perspective! With the Aerospace SEZ and Foxconn corridor, North Bengaluru is seeing tremendous capital appreciation. In terms of investment size, our private valley plots start at ninety-two point four Lakhs for twelve-hundred square feet, going up to two point four Crore for larger signature plots. Does that price range align with your investment horizon?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Yes, that fits comfortably. I am looking at an investment in the one point five to two Crore bracket."
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Perfect! For that bracket, our eighteen-hundred to twenty-four hundred square foot contour plots offer prime elevation. Because this is an ecological thirty-eight acre valley with underground utilities and curated parks, handover is scheduled for December 2029 with milestone payments. Does that delivery horizon suit your financial planning?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Yes, December 2029 is fine for land investment since phased appreciation works in our favor. Tell me a bit about the master layout and amenities."
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Whispers of the Wind features seventy-four percent open green spaces with natural valley streams and five themed eco-parks. At the center is our twenty-thousand square foot clubhouse with infinity pools, wellness spas, and sporting facilities. It is just twenty minutes from the airport."
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Sounds very well conceived. Is the project RERA approved?"
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Yes, completely! Divyasree has a thirty-year spotless track record, and the project is fully RERA registered under PRM slash KA slash RERA slash 1250 slash 301 slash PR slash 070525 slash 007718. I would love to arrange a VIP site tour with our Senior Property Specialist. Would this Sunday morning around eleven AM suit your schedule?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Sunday at eleven AM works for me. Please send the location and brochure on WhatsApp."
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Terrific! I have reserved Sunday at eleven AM for you and I am sending the valley master plan and location pin to your WhatsApp right now. Thank you so much, and have a wonderful day ahead!"
+        }
+      ]
+    },
+    {
+      "id": "flow_2",
+      "title": "Flow 2: Luxury Weekend Villa Buyer (End-User / Doctor)",
+      "persona": "Senior Medical Specialist | Seeking Private Family Nature Sanctuary",
+      "lead_score": "HOT LEAD (92/100)",
+      "outcome": "Senior Architect Consultation Scheduled (Saturday 4:00 PM)",
+      "language": "English (Conversational)",
+      "checkpoints": {
+        "intent": "Qualified - Self-Use Luxury Weekend Villa",
+        "geography": "Qualified - Loves Nandi Hills weather and scenic serenity",
+        "budget": "Qualified - Comfortable with ₹1.2 Cr to ₹1.5 Cr",
+        "timeline": "Qualified - Welcomes 4-year planning window for custom architecture"
+      },
+      "dialogue": [
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Good afternoon! This is Aarav from Divyasree Developers. We are launching Whispers of the Wind, an exclusive private valley villa plot community near Nandi Hills. Do you have two quick minutes to speak?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Yes, hello. Actually I was looking for a peaceful plot outside the city. Go ahead."
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "That is wonderful to hear! Are you envisioning this as a private weekend getaway for your family to escape city traffic, or more of an investment?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Purely for my family's weekend use. My work in the city is hectic, so I want fresh air, greenery, and quiet hills."
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Understood, and that is precisely how Whispers of the Wind was conceived. It is situated in a secluded valley between Nandi Hills and Horagina Betta, offering cooler microclimates and zero pollution. Are you comfortable with the Nandi Valley corridor?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Yes, we love driving to Nandi Hills on weekends. How are the plots priced?"
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Our villa plots start at ninety-two point four Lakhs for twelve-hundred square feet, and around one point two to one point four Crores for fifteen-hundred to eighteen-hundred square feet. Does that align comfortably with your budget?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Yes, one point two to one point four Crores is right within my target. What amenities do you have for children and relaxation?"
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "We have dedicated seventy-four percent of the thirty-eight acres to open nature, with five themed eco-parks, cycling trails, and natural streams. Our twenty-thousand square foot clubhouse includes an infinity pool overlooking the valley, spa pavilions, and sports courts. Possession is slated for December 2029 with milestone construction."
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "December 2029 actually gives us time to design our villa without rushing. Can we talk to your architect team about custom villa designs?"
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Absolutely! We can arrange a private consultation with our Senior Landscape Architect and Property Specialist this Saturday afternoon at four PM. Would that suit you?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Saturday at four PM is perfect. Please send me the brochure on WhatsApp."
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Wonderful! I have booked Saturday at four PM for you and sent the complete digital portfolio to your WhatsApp. Thank you, and have a restful week ahead!"
+        }
+      ]
+    },
+    {
+      "id": "flow_3",
+      "title": "Flow 3: Budget Constraint Objection Handling",
+      "persona": "Retail Investor | Budget Under ₹50 Lakhs",
+      "lead_score": "DISQUALIFIED / FUTURE PIPELINE (40/100)",
+      "outcome": "Polite Luxury Brand Exit & Logged in Future Registry",
+      "language": "English (Polite & Empathetic)",
+      "checkpoints": {
+        "intent": "Self-use / Small Investment",
+        "geography": "Comfortable with North BLR",
+        "budget": "Disqualified - Hard cap at ₹50 Lakhs (Below ₹92.4L minimum)",
+        "timeline": "Not evaluated due to budget mismatch"
+      },
+      "dialogue": [
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Good afternoon! This is Aarav from Divyasree Developers reaching out regarding Whispers of the Wind near Nandi Hills. Do you have two quick minutes to speak?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Yes, tell me. I am looking for a residential plot near Nandi Hills, but my budget is around forty-five to fifty Lakhs maximum."
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "I really appreciate your upfront transparency! Whispers of the Wind is an ultra-luxury thirty-eight acre private valley with underground infrastructure and a twenty-thousand square foot clubhouse. Because of this high-end specification, our plot investments begin at ninety-two point four Lakhs all-inclusive. Is your fifty Lakh budget flexible if the location and appreciation match your vision, or is it a firm cap?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "No, fifty Lakhs is my hard ceiling right now. Ninety-two Lakhs is beyond my stretch."
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "I completely understand and respect that. We want to ensure we never suggest an option outside your preferred comfort zone. May I keep your contact flagged in our Divyasree registry in case we launch a boutique phase or compact parcels in the future?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Yes, please do that. I appreciate you being direct and not wasting my time."
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "It is our absolute pleasure. Thank you for your courtesy today, and I wish you the very best with your property search!"
+        }
+      ]
+    },
+    {
+      "id": "flow_4",
+      "title": "Flow 4: Location Reluctance (Prefers Whitefield / East Bangalore)",
+      "persona": "Tech Founder | Living in Whitefield, Skeptical of Nandi Hills Commute",
+      "lead_score": "WARM LEAD (78/100)",
+      "outcome": "Location Bridge Successful -> WhatsApp Collateral Sent & Friday Follow-up",
+      "language": "English (Consultative)",
+      "checkpoints": {
+        "intent": "Qualified - Weekend Villa & Capital Growth",
+        "geography": "Initially Skeptical -> Successfully Converted via Infrastructure Bridge",
+        "budget": "Qualified - Budget of ₹1.5 Cr+ readily available",
+        "timeline": "Qualified - Comfortable with Dec 2029"
+      },
+      "dialogue": [
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Hello, good afternoon! This is Aarav from Divyasree Developers. I am calling regarding Whispers of the Wind, our new villa plotted valley near Nandi Hills. Do you have two quick minutes?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Look, I will be honest. Nandi Hills is way too far. I live and run my startup in Whitefield. I only consider properties in East Bangalore or Sarjapur."
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "That is a completely valid observation! For daily work commutes, Whitefield is definitely where you want to be. Whispers of the Wind is not meant for daily city commuting. It is designed as an exclusive weekend sanctuary—just seventy minutes away via the Bellary expressway, and twenty minutes from the International Airport."
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Even for a weekend home, why Nandi Hills instead of somewhere closer?"
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Two big reasons: First, the natural setting—it is nestled in a private valley with hills on both sides, seventy-four percent open green space, and clean air. Second, capital growth: with the Satellite Town Ring Road and the upcoming Aerospace SEZ, land values in this corridor are significantly outpacing East Bangalore. Our plots start at ninety-two point four Lakhs up to two point four Crore."
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "The airport proximity and STRR connectivity do make sense from an asset perspective. What is the handover timeline?"
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Full possession is targeted for December 2029 with phased milestone payments, giving you ample time for capital planning. How about I WhatsApp you the valley master layout and the North Bangalore infrastructure appreciation report?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "en-IN-NeerjaNeural",
+          "text": "Yes, that would be good. Send it across on this number and call me back on Friday."
+        },
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Done! I will send the materials across right now and follow up with you on Friday afternoon at three PM. Thank you for your time, and have a productive week!"
+        }
+      ]
+    },
+    {
+      "id": "flow_5",
+      "title": "Flow 5: Skeptical / Irritated User & Multilingual Hinglish Switching",
+      "persona": "HNI Business Owner | Privacy Skeptic -> Converted via Courtesy & RERA Verification",
+      "lead_score": "TURNAROUND LEAD (82/100)",
+      "outcome": "Objection De-escalated -> Official RERA Brochure Sent via WhatsApp",
+      "language": "Multilingual (English + Hindi/Hinglish)",
+      "checkpoints": {
+        "intent": "Qualified - Premium Land Investment",
+        "geography": "Qualified - Familiar with Airport / Nandi Hills route",
+        "budget": "Qualified - Easily meets ₹1 Cr+ threshold",
+        "timeline": "Qualified - Welcomes long-term wealth asset"
+      },
+      "dialogue": [
+        {
+          "speaker": "Agent",
+          "voice": "en-IN-PrabhatNeural",
+          "text": "Hello, good afternoon! This is Aarav from Divyasree Developers. Am I speaking with Mr. Sharma? Do you have two quick minutes to speak?"
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "hi-IN-MadhurNeural",
+          "text": "Kaun baat kar raha hai? Aapko mera number kahan se mila? Aur itne promotional calls kyu aate hain? Kahi ye koi fraud toh nahi hai?"
+        },
+        {
+          "speaker": "Agent",
+          "voice": "hi-IN-SwaraNeural",
+          "text": "Sir, main aapka gussa aur concern bilkul samajh sakta hoon, aur main aapka bilkul waqt kharab nahi karunga. Divyasree ek thirty-year-old reputed developer hai South India mein. Humara Nandi Hills ke paas naya private valley villa plot project launch hua hai—Whispers of the Wind. Agar aap comfortable nahi hain toh main turant apna call cut kar deta hoon, sir."
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "hi-IN-MadhurNeural",
+          "text": "Chalo theek hai, par ye project legal hai? Aaj kal Bangalore me bohot unauthorized plots bechte hain. RERA number hai iska?"
+        },
+        {
+          "speaker": "Agent",
+          "voice": "hi-IN-SwaraNeural",
+          "text": "Bilkul valid sawaal hai sir! Whispers of the Wind hundred percent government approved aur registered hai. Iska Karnataka RERA number hai: PRM slash KA slash RERA slash 1250 slash 301 slash PR slash 070525 slash 007718. Sir, saare title documents clear hain aur airport se sirf twenty minutes ki drive par hai."
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "hi-IN-MadhurNeural",
+          "text": "Accha, airport ke paas hai. Plot size aur pricing kya hai isme?"
+        },
+        {
+          "speaker": "Agent",
+          "voice": "hi-IN-SwaraNeural",
+          "text": "Sir, twelve-hundred square feet ke plot ninety-two point four lakh rupees se start hote hain, aur twenty-four hundred square feet ke signature plots one point eight Crore tak jaate hain. Poore thirty-eight acres mein seventy-four percent open greenery aur twenty-thousand square feet ka clubhouse hai."
+        },
+        {
+          "speaker": "Prospect",
+          "voice": "hi-IN-MadhurNeural",
+          "text": "Hindi me itne acche se samjhane ke liye shukriya. Mujhe ye RERA certificate aur master layout mere WhatsApp pe bhej do."
+        },
+        {
+          "speaker": "Agent",
+          "voice": "hi-IN-SwaraNeural",
+          "text": "Bohot bohot dhanyawad sir! Main RERA certificate, master layout aur pricing sheet abhi aapke WhatsApp par bhej raha hoon. Aap tasalli se dekh lijiye, fir hum connect karte hain. Have a great day sir!"
+        }
+      ]
+    }
+  ]
+}

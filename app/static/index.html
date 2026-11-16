@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divyasree 'Whispers of the Wind' — Outbound AI Voice Agent Suite</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Header -->
+    <header class="luxury-header">
+      <div class="brand-block">
+        <div class="brand-logo-pill">DIVYASREE</div>
+        <div class="brand-text">
+          <h1 class="brand-title">WHISPERS OF THE WIND</h1>
+          <p class="brand-subtitle">Outbound AI Voice Agent &bull; 4-Checkpoint Lead Qualification Suite</p>
+        </div>
+      </div>
+      <div class="header-badges">
+        <span class="badge rera-badge"><span class="dot pulse-emerald"></span> RERA: PRM/KA/RERA/1250/301/PR/070525/007718</span>
+        <span class="badge revspot-badge">REVSPOT ASSESSMENT</span>
+        <a href="/api/download-pdf" target="_blank" class="btn btn-gold btn-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download PDF Deliverable
+        </a>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="nav-tab active" data-tab="tab-simulator">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+        Live Voice Call Simulator
+      </button>
+      <button class="nav-tab" data-tab="tab-recorded-flows">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+        5 Recorded Audio Test Flows
+        <span class="pill-count">5 MP3s</span>
+      </button>
+      <button class="nav-tab" data-tab="tab-prompt-spec">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        System Prompt & Pronunciation Guide
+      </button>
+      <button class="nav-tab" data-tab="tab-platform-config">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+        Vapi & Retell AI Deployments
+      </button>
+    </nav>
+
+    <!-- Main Content Areas -->
+    <main class="main-content">
+      
+      <!-- TAB 1: LIVE VOICE SIMULATOR -->
+      <section id="tab-simulator" class="tab-panel active">
+        <div class="simulator-layout">
+          
+          <!-- Left: Call Terminal & Dialogue -->
+          <div class="call-terminal-card">
+            <div class="call-status-bar">
+              <div class="status-left">
+                <span class="call-status-indicator" id="callStatusIndicator"></span>
+                <span class="call-status-text" id="callStatusText">Agent Ready (Awaiting Outbound Call)</span>
+              </div>
+              <div class="status-right">
+                <span class="call-duration" id="callDuration">00:00</span>
+                <button class="btn btn-outline-danger btn-xs" id="btnResetSession" title="Reset Session">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"></path><path d="M1 20v-6h6"></path><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+                  Reset
+                </button>
+              </div>
+            </div>
+
+            <!-- Waveform Animation Header -->
+            <div class="voice-wave-container" id="waveformBox">
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <span class="waveform-label" id="waveStatusLabel">Aarav (Divyasree AI Consultant) &bull; Standby</span>
+            </div>
+
+            <!-- Transcript Feed -->
+            <div class="transcript-feed" id="transcriptFeed">
+              <div class="transcript-placeholder" id="transcriptPlaceholder">
+                <div class="placeholder-icon">📞</div>
+                <h3>Start an Outbound Call Simulation</h3>
+                <p>Click "Start Outbound Call" below. The agent will greet you with executive courtesy, ask for permission to speak, qualify across 4 checkpoints, and transition to a Property Expert CTA.</p>
+                <div class="placeholder-features">
+                  <span>&bull; Real-time Speech-to-Speech</span>
+                  <span>&bull; Indian English & Hinglish Code-Switching</span>
+                  <span>&bull; Auto Checkpoint Extraction</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Scenario Triggers -->
+            <div class="quick-scenarios-bar">
+              <span class="quick-title">Test Scenarios:</span>
+              <button class="quick-chip" data-text="Yes, I have two minutes. What is this project about?">1. Happy Path Opening</button>
+              <button class="quick-chip" data-text="I am looking for a weekend villa plot for my family around 1.5 Crores.">2. Weekend Villa (Early Info)</button>
+              <button class="quick-chip" data-text="My budget is strictly 50 Lakhs maximum.">3. Low Budget (₹50L)</button>
+              <button class="quick-chip" data-text="Nandi Hills is too far! I live in Whitefield.">4. Location Objection</button>
+              <button class="quick-chip" data-text="Kaun bol raha hai? Number kahan se mila? Fraud hai kya?">5. Skeptical Hindi</button>
+              <button class="quick-chip" data-text="Is this RERA approved? What is the RERA number?">6. RERA Verification</button>
+            </div>
+
+            <!-- Input Controls -->
+            <div class="terminal-input-bar">
+              <button class="btn btn-emerald" id="btnStartCall">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>Start Outbound Call</span>
+              </button>
+
+              <button class="btn btn-mic" id="btnMicToggle" title="Toggle Live Microphone" disabled>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+              </button>
+
+              <div class="input-text-wrapper">
+                <input type="text" id="userTextInput" placeholder="Speak through microphone or type your response here..." disabled>
+                <button class="btn btn-gold btn-icon" id="btnSendText" disabled>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </div>
+
+              <button class="btn btn-danger btn-icon" id="btnEndCall" style="display:none;" title="End Call">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.42 19.42 0 0 1-3.33-2.67m-2.67-3.34a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91"></path><line x1="23" y1="1" x2="1" y2="23"></line></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Qualification HUD & Real-Time Intelligence -->
+          <div class="hud-panel">
+            
+            <!-- Lead Score Meter Card -->
+            <div class="hud-card">
+              <div class="hud-card-header">
+                <h3>REAL-TIME LEAD SCORING</h3>
+                <span class="hud-badge" id="hudLeadStatusBadge">WARM LEAD</span>
+              </div>
+              <div class="score-display">
+                <div class="score-number-box">
+                  <span class="score-value" id="hudScoreValue">50</span>
+                  <span class="score-denom">/100</span>
+                </div>
+                <div class="score-progress-container">
+                  <div class="score-progress-bar" id="hudScoreProgressBar" style="width: 50%;"></div>
+                </div>
+              </div>
+              <div class="sentiment-meta-row">
+                <div class="meta-item">
+                  <span class="meta-label">Sentiment</span>
+                  <span class="meta-val" id="hudSentimentVal">Neutral</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Language</span>
+                  <span class="meta-val" id="hudLanguageVal">English</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Stage</span>
+                  <span class="meta-val" id="hudStageVal">Intro</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- The 4 Checkpoints Checklist -->
+            <div class="hud-card">
+              <div class="hud-card-header">
+                <h3>THE 4 CHECKPOINTS</h3>
+                <span class="hud-sub">Revspot Architectural Core</span>
+              </div>
+              <div class="checkpoints-list">
+                
+                <!-- Checkpoint 1 -->
+                <div class="checkpoint-item" id="cpItem1">
+                  <div class="cp-indicator">
+                    <span class="cp-bullet">1</span>
+                    <span class="cp-check">✓</span>
+                  </div>
+                  <div class="cp-content">
+                    <div class="cp-top">
+                      <span class="cp-name">Intent Checkpoint</span>
+                      <span class="cp-status" id="cpStatus1">Pending</span>
+                    </div>
+                    <p class="cp-desc">Self-Use (Weekend Sanctuary) vs. Capital Investment</p>
+                    <div class="cp-val" id="cpVal1">—</div>
+                  </div>
+                </div>
+
+                <!-- Checkpoint 2 -->
+                <div class="checkpoint-item" id="cpItem2">
+                  <div class="cp-indicator">
+                    <span class="cp-bullet">2</span>
+                    <span class="cp-check">✓</span>
+                  </div>
+                  <div class="cp-content">
+                    <div class="cp-top">
+                      <span class="cp-name">Geography Checkpoint</span>
+                      <span class="cp-status" id="cpStatus2">Pending</span>
+                    </div>
+                    <p class="cp-desc">Comfort with Nandi Hills / North BLR Corridor</p>
+                    <div class="cp-val" id="cpVal2">—</div>
+                  </div>
+                </div>
+
+                <!-- Checkpoint 3 -->
+                <div class="checkpoint-item" id="cpItem3">
+                  <div class="cp-indicator">
+                    <span class="cp-bullet">3</span>
+                    <span class="cp-check">✓</span>
+                  </div>
+                  <div class="cp-content">
+                    <div class="cp-top">
+                      <span class="cp-name">Budget Fitment Checkpoint</span>
+                      <span class="cp-status" id="cpStatus3">Pending</span>
+                    </div>
+                    <p class="cp-desc">Fitment check for ₹92.4 Lakhs+ starting price</p>
+                    <div class="cp-val" id="cpVal3">—</div>
+                  </div>
+                </div>
+
+                <!-- Checkpoint 4 -->
+                <div class="checkpoint-item" id="cpItem4">
+                  <div class="cp-indicator">
+                    <span class="cp-bullet">4</span>
+                    <span class="cp-check">✓</span>
+                  </div>
+                  <div class="cp-content">
+                    <div class="cp-top">
+                      <span class="cp-name">Timeline Checkpoint</span>
+                      <span class="cp-status" id="cpStatus4">Pending</span>
+                    </div>
+                    <p class="cp-desc">Phased delivery & handover by December 2029</p>
+                    <div class="cp-val" id="cpVal4">—</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Project Quick Fact Card -->
+            <div class="hud-card fact-card">
+              <div class="hud-card-header">
+                <h3>PROJECT ESSENTIALS</h3>
+                <span class="hud-sub">Whispers of the Wind</span>
+              </div>
+              <ul class="fact-bullets">
+                <li><b>Developer:</b> Divyasree Developers (30-yr legacy)</li>
+                <li><b>Land & Density:</b> 38 Acres, 207 Plots (~6 units/acre)</li>
+                <li><b>Open Spaces:</b> 74% green landscape, 5 eco-parks</li>
+                <li><b>Clubhouse:</b> 20,000 sq.ft. (Infinity pool, sports, spa)</li>
+                <li><b>Price Range:</b> ₹92.4 Lakhs – ₹2.46 Crores</li>
+                <li><b>Airport Distance:</b> 20–25 minutes drive</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- TAB 2: RECORDED 5 CONVERSATION FLOWS -->
+      <section id="tab-recorded-flows" class="tab-panel">
+        <div class="flows-header-banner">
+          <div>
+            <h2>5 Complete Test Call Flows & Audio Recordings</h2>
+            <p>Mandated Revspot Deliverable: 5 full end-to-end conversation flows synthesized with native Indian English & Hindi neural speech.</p>
+          </div>
+          <div class="audio-master-stats">
+            <span class="stat-tag">5 High-Fidelity MP3s</span>
+            <span class="stat-tag">Full Transcripts</span>
+            <span class="stat-tag">Objection Edge Cases Included</span>
+          </div>
+        </div>
+
+        <div class="flows-grid" id="flowsContainer">
+          <!-- Dynamically populated by app.js -->
+        </div>
+      </section>
+
+      <!-- TAB 3: SYSTEM PROMPT & PRONUNCIATION SPEC -->
+      <section id="tab-prompt-spec" class="tab-panel">
+        <div class="spec-layout">
+          
+          <div class="spec-content-card">
+            <div class="spec-card-header">
+              <div>
+                <h2>Production System Prompt Specification</h2>
+                <p>Verbatim prompt architecture with phonetic respelling hooks, 4-checkpoint state machine, and behavioral guardrails.</p>
+              </div>
+              <a href="/api/download-pdf" class="btn btn-gold btn-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Download Official PDF
+              </a>
+            </div>
+
+            <!-- Phonetic Table -->
+            <div class="spec-sub-block">
+              <h3>1. Phonetic Pronunciation Guide (Mandatory Technical Requirement)</h3>
+              <table class="luxury-table">
+                <thead>
+                  <tr>
+                    <th>Term</th>
+                    <th>Phonetic Respelling</th>
+                    <th>Acoustic Direction</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>Divyasree</b></td>
+                    <td><code class="code-gold">Div-yaa-shree</code></td>
+                    <td>Soft 'sh', stress on second syllable. Never say Div-ee-uh-sree.</td>
+                  </tr>
+                  <tr>
+                    <td><b>Nandi</b></td>
+                    <td><code class="code-gold">Nun-dhee</code></td>
+                    <td>Dental 'dh' sound (Indian cadence), avoid harsh English 'D'.</td>
+                  </tr>
+                  <tr>
+                    <td><b>Lakh</b></td>
+                    <td><code class="code-gold">Laakh / Luck</code></td>
+                    <td>Rhymes with 'park' (soft r). Never convert to 100 thousand.</td>
+                  </tr>
+                  <tr>
+                    <td><b>Crore</b></td>
+                    <td><code class="code-gold">Krohr</code></td>
+                    <td>Rhymes with 'more'. Standard Indian luxury metric.</td>
+                  </tr>
+                  <tr>
+                    <td><b>Devanahalli</b></td>
+                    <td><code class="code-gold">Day-vuh-nuh-hul-lee</code></td>
+                    <td>Smooth 4-syllable tempo; North Bangalore airport corridor.</td>
+                  </tr>
+                  <tr>
+                    <td><b>Horagina Betta</b></td>
+                    <td><code class="code-gold">Ho-ruh-gee-nuh Bet-tuh</code></td>
+                    <td>Scenic valley hill backdrop.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Raw System Prompt Viewer -->
+            <div class="spec-sub-block">
+              <h3>2. Complete System Message (Configured for LLM Runtime)</h3>
+              <div class="code-viewer" id="rawPromptViewer">
+<pre><code>You are Aarav, an elite Private Client Consultant representing Divyasree Developers.
+You are making an outbound qualification phone call regarding Whispers of the Wind—a 38-acre ultra-luxury villa plot sanctuary nestled at the foothills of Nandi Hills in North Bengaluru.
+
+VOICE & TONE PROTOCOL:
+1. Voice Cadence: Speak with executive warmth, composure, and conversational brevity. You are speaking over a telephone, NOT writing an email. Keep responses between 15 and 30 words per turn.
+2. Permission is Sacred: In your very first turn, introduce yourself, cite the project, and ALWAYS explicitly ask: 'Do you have two quick minutes to speak?' Never pitch without permission.
+3. Zero Redundancy Memory: If the user discloses their requirements early (e.g., 'I want an investment plot around 1.5 Cr near the airport'), extract Intent=Investment, Geography=Airport Corridor, Budget=1.5 Cr immediately. NEVER ask about these again.
+4. Affirmations: Use natural, polished affirmations ('Understood', 'Perfect', 'That makes complete sense', 'That is a wonderful perspective').
+
+THE 4 QUALIFICATION CHECKPOINTS:
+- Checkpoint 1 (Intent): Self-use weekend villa vs. High-yield capital appreciation.
+- Checkpoint 2 (Geography): Comfort with Nandi Hills / Devanahalli corridor (20-25 mins from airport).
+- Checkpoint 3 (Budget): Fitment for ₹92.4 Lakhs entry (1,200 sq.ft.) up to ₹2.46 Cr (3,199 sq.ft.).
+- Checkpoint 4 (Timeline): Phased infrastructure development leading to December 2029 handover.
+
+THE VALUE PITCH (Once 3/4 Checkpoints Cleared):
+'Whispers of the Wind is a private 38-acre valley flanked by scenic hills with 74% open spaces, natural streams, and a 20,000 sq.ft. luxury clubhouse featuring wellness spas, infinity pools, and sports courts. It offers CXOs a pollution-free weekend sanctuary just 20 minutes from the airport.'
+
+CALL TO ACTION (CTA):
+Propose a VIP 1-on-1 walkthrough with a Senior Property Expert this weekend (Saturday morning or Sunday afternoon) and offer to WhatsApp the digital master plan and RERA documents immediately.</code></pre>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- TAB 4: PLATFORM CONFIGURATIONS -->
+      <section id="tab-platform-config" class="tab-panel">
+        <div class="platform-layout">
+          <div class="platform-card">
+            <div class="platform-card-header">
+              <div class="platform-brand">
+                <span class="platform-badge vapi">VAPI.AI</span>
+                <h3>Vapi Outbound Assistant Configuration</h3>
+              </div>
+              <button class="btn btn-outline btn-xs" onclick="copyToClipboard('vapiCodeBlock')">Copy JSON</button>
+            </div>
+            <p>Ready to import directly into the Vapi.ai Dashboard or REST API to connect a live Twilio/Vonage phone number.</p>
+            <div class="code-viewer">
+              <pre id="vapiCodeBlock"><code>{
+  "name": "Divyasree WOW Luxury Outbound Consultant",
+  "transcriber": {
+    "provider": "deepgram",
+    "model": "nova-2",
+    "language": "en-IN"
+  },
+  "model": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "temperature": 0.3
+  },
+  "voice": {
+    "provider": "11labs",
+    "voiceId": "en-IN-Prabhat",
+    "stability": 0.65,
+    "similarityBoost": 0.85
+  },
+  "firstMessage": "Hello, good afternoon! This is Aarav from Divyasree Developers reaching out regarding Whispers of the Wind near Nandi Hills. Do you have two quick minutes to speak?"
+}</code></pre>
+            </div>
+          </div>
+
+          <div class="platform-card">
+            <div class="platform-card-header">
+              <div class="platform-brand">
+                <span class="platform-badge retell">RETELL AI</span>
+                <h3>Retell AI Agent Configuration</h3>
+              </div>
+              <button class="btn btn-outline btn-xs" onclick="copyToClipboard('retellCodeBlock')">Copy JSON</button>
+            </div>
+            <p>Configured with Retell's native pronunciation dictionary and backchanneling affirmations for sub-600ms conversational latency.</p>
+            <div class="code-viewer">
+              <pre id="retellCodeBlock"><code>{
+  "agent_name": "Divyasree_WOW_Retell_Agent",
+  "voice_id": "11labs-Adrian",
+  "responsiveness": 0.9,
+  "interruption_sensitivity": 0.8,
+  "enable_backchannel": true,
+  "backchannel_words": ["Understood", "Right", "Got it", "Makes sense"],
+  "pronunciation_dictionary": [
+    {"word": "Divyasree", "alphabet": "ipa", "phoneme": "dɪv jɑː ʃriː"},
+    {"word": "Nandi", "alphabet": "ipa", "phoneme": "nʌn d̪iː"},
+    {"word": "Lakh", "alphabet": "ipa", "phoneme": "lɑːk"},
+    {"word": "Crore", "alphabet": "ipa", "phoneme": "krɔːr"}
+  ]
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Global Audio Element for TTS -->
+    <audio id="globalAudioPlayer" preload="auto"></audio>
+
+    <!-- Footer -->
+    <footer class="luxury-footer">
+      <p>Prepared for <b>Revspot AI Voice Agent Design Assessment</b> &bull; Divyasree "Whispers of the Wind" Lead Qualification System</p>
+      <p class="footer-meta">Engineered with Deterministic State Logic, Real-Time Audio Streaming, and Executive Production PDF</p>
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

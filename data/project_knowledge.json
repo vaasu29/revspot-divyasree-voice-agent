@@ -1,0 +1,50 @@
+{
+  "project_name": "Whispers of the Wind (WOW)",
+  "developer": "Divyasree Developers",
+  "product_type": "Premium Private Valley Villa Plots",
+  "location": {
+    "zone": "North Bengaluru",
+    "corridor": "Nandi Valley / Devanahalli / Doddaballapura corridor",
+    "landmark": "Near Nandi Hills (flanked by Dibbagiri Betta & Horagina Betta)",
+    "village": "Heggadihalli and Gulya Nandigunda, Doddaballapura Taluk",
+    "airport_distance": "20–25 minutes drive to Kempegowda International Airport (BLR)",
+    "infrastructure": "Devanahalli Business Park, Aerospace SEZ, Foxconn plant corridor, STRR (Satellite Town Ring Road)"
+  },
+  "rera_number": "PRM/KA/RERA/1250/301/PR/070525/007718",
+  "land_area": "38 Acres",
+  "density": "Low-density luxury living (~6 plots per acre, total 207 exclusive plots)",
+  "open_spaces": "74% open spaces, bio-luxury landscaping, natural water streams, wind decks, step gardens",
+  "plot_sizes": [
+    {"size_sqft": 1200, "dimensions": "30x40 ft"},
+    {"size_sqft": 1500, "dimensions": "30x50 ft"},
+    {"size_sqft": 1800, "dimensions": "30x60 ft"},
+    {"size_sqft": 2400, "dimensions": "40x60 ft"},
+    {"size_sqft": 3199, "dimensions": "Signature Estate plots"}
+  ],
+  "pricing": {
+    "starting_price": "₹92.4 Lakhs",
+    "max_price": "₹2.46 Crores",
+    "tax_inclusive": true,
+    "price_per_sqft_range": "₹7,200 - ₹7,700 approx."
+  },
+  "possession_date": "December 2029 (Phased infrastructure delivery)",
+  "clubhouse": {
+    "area": "20,000 sq.ft. Luxury Lifestyle Clubhouse",
+    "amenities": [
+      "Infinity-edge swimming pool overlooking the valley",
+      "World-class gymnasium and yoga/meditation pavilion",
+      "Squash court, indoor badminton, and table tennis",
+      "Pickleball and futsal courts, mini-golf putting green",
+      "Private dining lounge, cafe, and banquet terrace",
+      "Co-working business lounge for remote CXO work",
+      "Spa, wellness center, and steam/sauna"
+    ]
+  },
+  "eco_and_smart_infrastructure": [
+    "Underground electrical cabling & fiber-optic connectivity",
+    "100% gravity-fed centralized water supply & STP recycling",
+    "Rainwater harvesting & groundwater recharge pits",
+    "EV charging stations at clubhouse & visitor parking",
+    "Wide asphalt tree-lined internal avenues with pedestrian-friendly pathways"
+  ]
+}

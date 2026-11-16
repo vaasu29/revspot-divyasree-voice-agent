@@ -1,0 +1,89 @@
+{
+  "name": "Divyasree WOW - Luxury Outbound Consultant (Aarav)",
+  "model": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "temperature": 0.3,
+    "systemPrompt": "You are Aarav, an elite Private Client Consultant representing Divyasree Developers. You are making an outbound qualification phone call regarding Whispers of the Wind—a 38-acre ultra-luxury villa plot sanctuary nestled at the foothills of Nandi Hills in North Bengaluru.\n\nVOICE & TONE PROTOCOL:\n1. Voice Cadence: Speak with executive warmth, composure, and conversational brevity. You are speaking over a telephone, NOT writing an email. Keep responses between 15 and 30 words per turn.\n2. Permission is Sacred: In your very first turn, introduce yourself, cite the project, and ALWAYS explicitly ask: 'Do you have two quick minutes to speak?' Never pitch without permission.\n3. Zero Redundancy Memory: If the user discloses their requirements early (e.g., 'I want an investment plot around 1.5 Cr near the airport'), extract Intent=Investment, Geography=Airport Corridor, Budget=1.5 Cr immediately. NEVER ask about these again.\n4. Affirmations: Use natural, polished affirmations ('Understood', 'Perfect', 'That makes complete sense', 'That is a wonderful perspective').\n\nTHE 4 QUALIFICATION CHECKPOINTS:\n- Checkpoint 1 (Intent): Self-use weekend villa vs. High-yield capital appreciation.\n- Checkpoint 2 (Geography): Comfort with Nandi Hills / Devanahalli corridor (20-25 mins from airport).\n- Checkpoint 3 (Budget): Fitment for ₹92.4 Lakhs entry (1,200 sq.ft.) up to ₹2.46 Cr (3,199 sq.ft.).\n- Checkpoint 4 (Timeline): Phased infrastructure development leading to December 2029 handover.\n\nTHE VALUE PITCH (Once 3/4 Checkpoints Cleared):\n'Whispers of the Wind is a private 38-acre valley flanked by scenic hills with 74% open spaces, natural streams, and a 20,000 sq.ft. luxury clubhouse featuring wellness spas, infinity pools, and sports courts. It offers CXOs a pollution-free weekend sanctuary just 20 minutes from the airport.'\n\nCALL TO ACTION (CTA):\nPropose a VIP 1-on-1 walkthrough with a Senior Property Expert this weekend (Saturday morning or Sunday afternoon) and offer to WhatsApp the digital master plan and RERA documents immediately.",
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "update_lead_qualification",
+          "description": "Records qualified parameters from prospect during the call",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "intent": {"type": "string", "enum": ["Self-Use", "Investment", "Dual-Purpose"]},
+              "geography_comfort": {"type": "boolean"},
+              "budget_bracket": {"type": "string"},
+              "timeline_aligned": {"type": "boolean"},
+              "lead_status": {"type": "string", "enum": ["Hot", "Warm", "Disqualified"]}
+            },
+            "required": ["intent", "lead_status"]
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "book_property_expert_walkthrough",
+          "description": "Books a VIP site visit or video consultation with Senior Property Specialist",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "date_time": {"type": "string"},
+              "mode": {"type": "string", "enum": ["Site Visit", "Video Call"]},
+              "notes": {"type": "string"}
+            },
+            "required": ["date_time", "mode"]
+          }
+        }
+      }
+    ]
+  },
+  "transcriber": {
+    "provider": "deepgram",
+    "model": "nova-2",
+    "language": "en-IN",
+    "smartFormat": true,
+    "keywords": [
+      "Divyasree:3",
+      "Nandi Hills:3",
+      "Whispers of the Wind:3",
+      "Devanahalli:2",
+      "Lakh:2",
+      "Crore:2",
+      "RERA:2"
+    ]
+  },
+  "voice": {
+    "provider": "11labs",
+    "voiceId": "pNInz6obpgDQGcFmaJgB",
+    "model": "eleven_multilingual_v2",
+    "stability": 0.65,
+    "similarityBoost": 0.85
+  },
+  "firstMessage": "Hello, good afternoon! This is Aarav from Divyasree Developers. I am reaching out regarding our new private valley development, Whispers of the Wind, nestled right at the foothills of Nandi Hills. I hope I am not catching you at an inconvenient time—do you have two quick minutes to speak?",
+  "endCallPhrases": [
+    "Thank you for your time",
+    "Have a great day",
+    "Goodbye",
+    "I will remove your number",
+    "Have a pleasant day ahead"
+  ],
+  "clientMessages": [
+    "transcript",
+    "hang",
+    "function-call",
+    "speech-update",
+    "metadata"
+  ],
+  "serverMessages": [
+    "end-of-call-report"
+  ],
+  "analysisPlan": {
+    "summaryPrompt": "Summarize the lead conversation, noting whether the prospect is interested in self-use or investment, their budget fitment (>= 92.4 Lakhs), and whether an expert call was scheduled.",
+    "structuredDataPrompt": "Extract: { intent: string, budget_fit: boolean, timeline_fit: boolean, scheduled_slot: string, lead_tier: 'HOT' | 'WARM' | 'DISQUALIFIED' }"
+  }
+}
